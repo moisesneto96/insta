@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+
+        <div class="container-imagens">
+            <img src="https://github.com/rodolfomori/MPDZ---Instagram/blob/master/img/celular.png?raw=true" class="img-celular">
+            <img src="https://github.com/rodolfomori/MPDZ---Instagram/blob/master/img/insta1.png?raw=true" class="imagem-celular">
+            <img src="https://github.com/rodolfomori/MPDZ---Instagram/blob/master/img/insta2.png?raw=true" class="imagem-celular" id="troca-imagem">
+        </div>
+    
+        <div class="container-itens">
+            <div class="container-form">
+                <img src="https://github.com/rodolfomori/MPDZ---Instagram/blob/master/img/insta-logo.png?raw=true" class="insta-logo">
+    
+                <input placeholder="Telefone, nome de usuário ou email">
+                <input placeholder="Senha">
+    
+                <button>Entrar</button>
+    
+                <a  href="https://www.facebook.com" class="login-facebook">Entrar com o Facebook</a>
+                <a  href="https://www.instagram.com/accounts/password/reset/" class="esqueceu-senha">Esqueceu a senha?</a>
+            </div>
+    
+            <div class="container-cadastro">
+                <p class="paragrafo-conta">Não tem uma conta?</p><a class="link-cadastro">Cadastrar-se</a>
+            </div>
+    
+            <p class="paragrafo-app">Obtenha o aplicativo</p>
+    
+            <div class="container-app">
+                <img src="https://github.com/rodolfomori/MPDZ---Instagram/blob/master/img/ios.png?raw=true" alt="logo do ios" class="logo-app">
+                <img src="https://github.com/rodolfomori/MPDZ---Instagram/blob/master/img/google.png?raw=true" alt="logo do google" class="logo-app">
+            </div>
+        </div>
+        <script>
+            let imagem = document.getElementById("troca-imagem")
+        
+            function trocaImagem() {
+        
+                if (imagem.style.opacity == 0) {
+                    imagem.style.opacity = 1
+                }
+                else {
+                    imagem.style.opacity = 0
+                }
+            }
+        
+            setInterval(function () {
+                trocaImagem()
+            }, 4000);
+        
+        </script>
+</body>
+</html>
